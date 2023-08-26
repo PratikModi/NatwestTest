@@ -16,7 +16,7 @@ public class PrimeNumbersBySieveMethod implements IPrimeNumberStrategy {
     @Override
     @Cacheable("primeNumbers")
     public List<Integer> getPrimeNumbers(int initial) {
-        System.out.println("Calling Method");
+        //System.out.println("Calling Method");
         boolean[] AR = new boolean[initial+1];
         Arrays.fill(AR,true);
 

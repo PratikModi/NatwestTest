@@ -13,7 +13,7 @@ public class PrimeNumberBySquareRootMethod implements IPrimeNumberStrategy {
     @Override
     @Cacheable("primeNumbers")
     public List<Integer> getPrimeNumbers(int initial) {
-        System.out.println("Calling Method");
+        //System.out.println("Calling Method");
         var result = new ArrayList<Integer>();
         for(int i=2;i<=initial;i++){
             if(isPrimeWithSquareRoot(i)){
