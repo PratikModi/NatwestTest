@@ -5,10 +5,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.*;
 import java.util.List;
 
 @Data
@@ -19,12 +16,9 @@ import java.util.List;
 public class PrimeNumbers {
 
     @XmlElement(name = "Initial")
-    @JsonProperty(value = "Initial")
     private int initial;
-    @XmlElement(name = "Primes")
-    @JsonProperty(value = "Primes")
+    @XmlElementWrapper(name = "Primes")
+    @XmlElement(name = "Prime")
     private List<Integer> primes;
-
-
 
 }
