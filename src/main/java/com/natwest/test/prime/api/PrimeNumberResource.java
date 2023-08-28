@@ -24,7 +24,7 @@ public class PrimeNumberResource {
     @Autowired
     private AlgorithmFactory factory;
 
-    @RequestMapping(value = "/primes/{initial}",produces = {/*MediaType.APPLICATION_XML_VALUE,*/MediaType.APPLICATION_JSON_VALUE})
+    @RequestMapping(value = "/primes/{initial}",produces = {MediaType.APPLICATION_XML_VALUE,MediaType.APPLICATION_JSON_VALUE})
     ResponseEntity getPrimeNumbers(@PathVariable("initial") Integer initial, @RequestParam(required = false)Algorithms algorithm) {
 
         if(Objects.isNull(initial) || initial.intValue()<2){
