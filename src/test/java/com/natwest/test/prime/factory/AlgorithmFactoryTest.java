@@ -6,7 +6,6 @@ import com.natwest.test.prime.service.impl.PrimeNumberByBruteForceMethod;
 import com.natwest.test.prime.service.impl.PrimeNumberBySquareRootMethod;
 import com.natwest.test.prime.service.impl.PrimeNumbersBySieveMethod;
 import org.junit.Assert;
-import org.junit.Before;
 import org.junit.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.junit.runner.RunWith;
