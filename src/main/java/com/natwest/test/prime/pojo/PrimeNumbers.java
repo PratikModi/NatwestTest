@@ -12,10 +12,10 @@ import java.util.List;
 @NoArgsConstructor
 @XmlRootElement
 public class PrimeNumbers {
-    @XmlElement(name = "Initial", required = true)
+    @XmlElement(name = "initial", required = true)
     private int initial;
-    @XmlElementWrapper(name = "Primes",required = true)
-    @XmlElement(name = "Prime",required = true)
+    @XmlElementWrapper(name = "primes",required = true)
+    @XmlElement(name = "prime",required = true)
     private List<Integer> primes;
 
 }
